@@ -11,7 +11,7 @@ import {
 
 function MainRouter() {
   return (
-    <HashRouter basename="/">
+    <BrowserRouter basename="/animation-active-web">
       <Switch>
         <Route path="/" component={Main} exact />
         <Route path="/rotation" component={Rotation} exact />
@@ -20,7 +20,7 @@ function MainRouter() {
         <Route path="/sign-in" component={SingIn} exact />
         <Route path="/sign-up" component={SignUp} exact />
       </Switch>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
