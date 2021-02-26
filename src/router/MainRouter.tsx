@@ -11,7 +11,7 @@ import {
 
 function MainRouter() {
   return (
-    <BrowserRouter basename="/animation-active-web">
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route path="/" component={Main} exact />
         <Route path="/rotation" component={Rotation} exact />
