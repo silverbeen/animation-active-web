@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Switch } from "react-router-dom";
 import {
   Rotation,
   Mouse,
@@ -11,7 +11,7 @@ import {
 
 function MainRouter() {
   return (
-    <BrowserRouter>
+    <HashRouter basename="/">
       <Switch>
         <Route path="/" component={Main} exact />
         <Route path="/rotation" component={Rotation} exact />
@@ -20,7 +20,7 @@ function MainRouter() {
         <Route path="/sign-in" component={SingIn} exact />
         <Route path="/sign-up" component={SignUp} exact />
       </Switch>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
