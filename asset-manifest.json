@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/animation-active-web/static/css/main.edeeb345.chunk.css",
+    "main.js": "/animation-active-web/static/js/main.cf9d91e1.chunk.js",
+    "main.js.map": "/animation-active-web/static/js/main.cf9d91e1.chunk.js.map",
+    "runtime-main.js": "/animation-active-web/static/js/runtime-main.afcc179f.js",
+    "runtime-main.js.map": "/animation-active-web/static/js/runtime-main.afcc179f.js.map",
+    "static/js/2.4112566d.chunk.js": "/animation-active-web/static/js/2.4112566d.chunk.js",
+    "static/js/2.4112566d.chunk.js.map": "/animation-active-web/static/js/2.4112566d.chunk.js.map",
+    "static/js/3.92ca735b.chunk.js": "/animation-active-web/static/js/3.92ca735b.chunk.js",
+    "static/js/3.92ca735b.chunk.js.map": "/animation-active-web/static/js/3.92ca735b.chunk.js.map",
+    "index.html": "/animation-active-web/index.html",
+    "static/css/main.edeeb345.chunk.css.map": "/animation-active-web/static/css/main.edeeb345.chunk.css.map",
+    "static/js/2.4112566d.chunk.js.LICENSE.txt": "/animation-active-web/static/js/2.4112566d.chunk.js.LICENSE.txt",
+    "static/media/earth.fd69ccf0.png": "/animation-active-web/static/media/earth.fd69ccf0.png",
+    "static/media/lion.81c01d2b.png": "/animation-active-web/static/media/lion.81c01d2b.png",
+    "static/media/palne.ffc130d1.png": "/animation-active-web/static/media/palne.ffc130d1.png",
+    "static/media/미니언즈.0e672c6d.png": "/animation-active-web/static/media/미니언즈.0e672c6d.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.afcc179f.js",
+    "static/js/2.4112566d.chunk.js",
+    "static/css/main.edeeb345.chunk.css",
+    "static/js/main.cf9d91e1.chunk.js"
+  ]
+}
