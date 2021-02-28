@@ -61,7 +61,7 @@ const Main: React.FC<{ style: string }> = () => {
           <h1>COLOR DIEPERSION</h1>
         </div>
       </S.Main>
-      <S.ButtonWrapper>
+      <S.ButtonWrapper >
         <FiChevronLeft size={45} onClick={prevSlider} />
         <FiChevronRight size={45} onClick={nextSlider} />
       </S.ButtonWrapper>

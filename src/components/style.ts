@@ -25,10 +25,6 @@ const MainWrapper = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
-    /* > i {
-      font-size: 25px;
-    } */
   }
 `;
 

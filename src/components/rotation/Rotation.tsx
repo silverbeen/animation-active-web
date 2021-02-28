@@ -30,7 +30,17 @@ function Rotation() {
   return (
     <>
       <S.MainWrapper>
-        <div className="button-wrapper">
+        <div
+          className="button-wrapper"
+          style={{
+            position: "absolute",
+            right: "0",
+            width: "100px",
+            height: "250px",
+            flexDirection: "column",
+            top : '308px'
+          }}
+        >
           <BiChevronUpCircle onClick={speedIncrese} size={36} color="white" />
           <span>{speedVal}</span>
           <BiChevronDownCircle onClick={speedDecrese} size={36} color="white" />
