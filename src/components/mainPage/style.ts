@@ -32,28 +32,38 @@ const Nav = styled.nav`
 const MainWrapper = styled.div`
   width: 100%;
   height: 100vh;
-  background-color: rgb(240, 195, 49);
+  background-color: #31f0c4;
+
+  .container {
+  }
 `;
 
 const Main = styled.div`
-  width: 60%;
-  height: 60%;
-  border: 1px solid red;
+  width: 235%;
   display: flex;
-  flex-direction: column;
-  margin: 0 auto;
+  flex-direction: row;
+  justify-content: center;
+  height: 460px;
+  margin-top: 200px;
 
   .introduce {
+    background-color: white;
+    margin: 0 200px;
+    width: 20%;
+    height: 100%;
     display: flex;
     justify-content: row;
+    box-shadow: 0px 3px 6px #00000029;
   }
 `;
 
 const ButtonWrapper = styled.div`
-  margin: 20px;
-  width: 100%;
+  margin: 0 auto;
+  width: 200px;
   height: 40px;
   border: 1px solid red;
+  display: flex;
+  justify-content: center;
 `;
 
 export { HeaderWrapper, Nav, MainWrapper, Main, ButtonWrapper };

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { lion, 미니언즈 } from "../../assets/index";
+import { 라이언, 미니언즈 } from "../../assets/index";
 import * as S from "../style";
 
 const Mouse: React.FC = () => {
@@ -19,8 +19,8 @@ const Mouse: React.FC = () => {
       <S.MouseWrapper onMouseMove={mouseLocation}>
         <img src={미니언즈} alt="미니언즈" />
         <div style={{ transform: circle }} id="circle" />
-        
-        <img src={lion} alt="라이언" />
+
+        <img src={라이언} alt="라이언" />
         <div style={{ transform: lion }} id="lion-left" />
         <div style={{ transform: lion }} id="lion-right" />
       </S.MouseWrapper>
