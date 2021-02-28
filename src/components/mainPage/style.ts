@@ -19,7 +19,7 @@ const Nav = styled.nav`
   }
 
   a {
-    margin: 10px;
+    padding: 10px;
     color: white;
     font-size: 20px;
     font-weight: 600;
@@ -53,17 +53,19 @@ const Main = styled.div`
     height: 100%;
     display: flex;
     justify-content: row;
-    box-shadow: 0px 3px 6px #00000029;
+    box-shadow: 5px 3px 5px #00000029;
+    border-radius: 20px;
   }
 `;
 
 const ButtonWrapper = styled.div`
-  margin: 0 auto;
+  margin: 40px auto;
   width: 200px;
   height: 40px;
   border: 1px solid red;
   display: flex;
   justify-content: center;
+
 `;
 
 export { HeaderWrapper, Nav, MainWrapper, Main, ButtonWrapper };

@@ -15,8 +15,6 @@ const Main: React.FC<{ style: string }> = () => {
   const nextSlider = () => {
     if (currentSlider >= TOTAL_SILDES) {
       setCurrentSlider(0);
-      //setCurrnetWidth("");
-      history.push('/')
     } else {
       setCurrentSlider(currentSlider + 1);
     }
@@ -30,6 +28,18 @@ const Main: React.FC<{ style: string }> = () => {
     }
   };
 
+  const rotationHistory = () => {
+    history.push("/rotation");
+  };
+
+  const eyesHistory = () => {
+    history.push("/mouse");
+  };
+
+  const dispersionHistory = () => {
+    history.push("/dispersion");
+  };
+
   useEffect(() => {
     sliderRef.current!.style.transition = "all 0.5s ease-in-out";
     sliderRef.current!.style.transform = `translateX(-${currentSlider * 30}%)`;
@@ -39,15 +49,15 @@ const Main: React.FC<{ style: string }> = () => {
     <S.MainWrapper>
       <Header />
       <S.Main ref={sliderRef}>
-        <div className="introduce" >
+        <div className="introduce" onClick={rotationHistory}>
           <img src={rotation} alt="이미지" />
           <h1>ROTATION</h1>
         </div>
-        <div className="introduce">
+        <div className="introduce" onClick={eyesHistory}>
           <img src={eyes} alt="이미지" />
           <h1>EYES MOUSE</h1>
         </div>
-        <div className="introduce">
+        <div className="introduce" onClick={dispersionHistory}>
           <img src={color} alt="이미지" />
           <h1>COLOR DIEPERSION</h1>
         </div>
