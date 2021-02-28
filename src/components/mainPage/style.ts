@@ -20,11 +20,11 @@ const Nav = styled.nav`
 
   a {
     padding: 10px;
-    color: white;
+    color: black;
     font-size: 20px;
     font-weight: 600;
     text-decoration: none;
-    text-shadow: 4px 4px 4px gray;
+    text-shadow: 4px 4px 4px #8080808c;
   }
 `;
 
@@ -32,10 +32,7 @@ const Nav = styled.nav`
 const MainWrapper = styled.div`
   width: 100%;
   height: 100vh;
-  background-color: #31f0c4;
-
-  .container {
-  }
+  background-color: #fdd835bf;
 `;
 
 const Main = styled.div`
@@ -62,9 +59,8 @@ const ButtonWrapper = styled.div`
   margin: 40px auto;
   width: 200px;
   height: 40px;
-  border: 1px solid red;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 
 `;
 

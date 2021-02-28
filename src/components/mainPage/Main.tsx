@@ -1,14 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
 import * as S from "./style";
 import Header from "./Header";
-import { BiChevronUpCircle, BiChevronDownCircle } from "react-icons/bi";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import { color, rotation, eyes } from "../../assets/index";
 import { useHistory } from "react-router";
 
 const Main: React.FC<{ style: string }> = () => {
   const TOTAL_SILDES = 2;
   const [currentSlider, setCurrentSlider] = useState<number>(0);
-  //const [currentWidth, setCurrnetWidth] = useState<string>("20%");
   const sliderRef = useRef<HTMLDivElement>(null);
   const history = useHistory();
 
@@ -63,8 +62,8 @@ const Main: React.FC<{ style: string }> = () => {
         </div>
       </S.Main>
       <S.ButtonWrapper>
-        <BiChevronUpCircle size={45} color="white" onClick={prevSlider} />
-        <BiChevronDownCircle size={45} color="white" onClick={nextSlider} />
+        <FiChevronLeft size={45} onClick={prevSlider} />
+        <FiChevronRight size={45} onClick={nextSlider} />
       </S.ButtonWrapper>
     </S.MainWrapper>
   );
