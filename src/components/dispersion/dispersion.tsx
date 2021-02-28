@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ComeBack from "../ComeBack";
 import * as S from "../style";
 
 interface DispersionState {
@@ -26,6 +27,8 @@ const Circle: React.FC<{
 function Dispersion() {
   const [rotateVal, setRotateVal] = useState<number>(0);
   const rotateNum = [];
+  const [font, setFont] = useState<string>("25px");
+  const [translate, setTranslate] = useState<string>("");
 
   const circleSpread = () => {
     console.log(rotateVal);
@@ -48,11 +51,29 @@ function Dispersion() {
     ></Circle>
   ));
 
+  const onMouseEvent = () => {
+    setFont("30px");
+    setTranslate("2s");
+  };
+
   return (
-    <S.MainWrapper style={{ backgroundColor: "#ec4fff" }}>
+    <S.MainWrapper style={{ backgroundColor: "#f48fb1" }}>
+      <ComeBack />
       <div className="button-wrapper">
-        <i onClick={circleSpread}>open</i>
-        <i onClick={returnRotate}>close</i>
+        <i
+          onClick={circleSpread}
+          onMouseMove={onMouseEvent}
+          style={{ fontSize: font, translate: translate }}
+        >
+          open
+        </i>
+        <i
+          onClick={returnRotate}
+          onMouseMove={onMouseEvent}
+          style={{ fontSize: font, translate: translate }}
+        >
+          close
+        </i>
       </div>
       {rotateApear}
     </S.MainWrapper>

@@ -17,13 +17,18 @@ const MainWrapper = styled.div`
 
   .button-wrapper {
     position: absolute;
-    right: 10px;
-    width: 100px;
-    height: 300px;
+    top: 0;
+    margin: 20px auto;
+    width: 300px;
+    height: 40px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
+    /* > i {
+      font-size: 25px;
+    } */
   }
 `;
 
@@ -58,7 +63,7 @@ const MouseWrapper = styled.div`
     top: 320px;
     right: 767px;
   }
-  
+
   #lion-right {
     width: 20px;
     height: 20px;
@@ -87,4 +92,19 @@ const Circle = styled.div`
   }
 `;
 
-export { MainWrapper, MouseWrapper, Circle };
+const ComeBack = styled.a`
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  a {
+    text-decoration: none;
+    font-size: 23px;
+    color: black;
+  }
+`;
+
+export { MainWrapper, MouseWrapper, Circle, ComeBack };
