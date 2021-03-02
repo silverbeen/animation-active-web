@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import * as S from "../style";
 import { earth, palne } from "../../assets/index";
 import { BiChevronUpCircle, BiChevronDownCircle } from "react-icons/bi";
+import ComeBack from "../ComeBack";
 
 function Rotation() {
   const [speedVal, SetSpeedVal] = useState(1);
@@ -30,6 +31,7 @@ function Rotation() {
   return (
     <>
       <S.MainWrapper>
+        <ComeBack />
         <div
           className="button-wrapper"
           style={{
@@ -38,7 +40,7 @@ function Rotation() {
             width: "100px",
             height: "250px",
             flexDirection: "column",
-            top : '308px'
+            top: "308px",
           }}
         >
           <BiChevronUpCircle onClick={speedIncrese} size={36} color="white" />
